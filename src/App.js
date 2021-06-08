@@ -1,17 +1,11 @@
 import Header from './Components/Header'
-import Personal from './Components/Personal'
-import Education from './Components/Education'
-import Work from './Components/Work'
-import Options from './Components/Options'
+import Form from './Components/Form'
 
 function App() {
   return (
     <div>
       <Header />
-      <Personal />
-      <Education />
-      <Work />
-      <Options />
+      <Form />
     </div>
   );
 }
