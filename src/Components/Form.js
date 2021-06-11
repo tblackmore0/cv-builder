@@ -20,12 +20,12 @@ function Form () {
         const userEmailRef = emailRef.current.value;
 
         const formData = {
-            title = userTitle,
-            firstName = userFirstName,
-            lastName = userLastName,
-            address = userAddress,
-            phoneNumber = userPhoneNumber,
-            email = userEmailRef,
+            title: userTitle,
+            firstName: userFirstName,
+            lastName: userLastName,
+            address: userAddress,
+            phoneNumber: userPhoneNumber,
+            email: userEmailRef,
         };
 
         console.log(formData);
@@ -35,32 +35,26 @@ function Form () {
 
 
     return (
-        <div className = 'card'>
-            <h1>Personal Information</h1>
+        <div className = 'form'>
+            <h2>Personal Information</h2>
             <form onSubmit={submitHandler}>
                 <div className = 'formSection'>
-                    <label htmlFor='title'>Title</label>
-                    <input type='text' required id='title' ref={titleRef} />
+                    <input type='text' required id='title' ref={titleRef} placeholder='Title' />
                 </div>
                 <div className = 'formSection'>
-                    <label htmlFor='firstName'>First Name</label>
-                    <input type='text' required id='firstName' ref={firstNameRef} />
+                    <input type='text' required id='firstName' ref={firstNameRef} placeholder='First name' />
                 </div>
                 <div className = 'formSection'>
-                    <label htmlFor='lastName'>Last Name</label>
-                    <input type='text' required id='lastName' ref={lastNameRef} />
+                    <input type='text' required id='lastName' ref={lastNameRef} placeholder='Last name' />
                 </div>
                 <div className = 'formSection'>
-                    <label htmlFor='address'>Address</label>
-                    <input type='text' required id='address' ref={addressRef} />
+                    <input type='text' required id='address' ref={addressRef} placeholder='Address' />
                 </div>
                 <div className = 'formSection'>
-                    <label htmlFor='phoneNumber'>Phone Number</label>
-                    <input type='number' required id='phoneNumber' ref={phoneNumberRef} />
+                    <input type='number' required id='phoneNumber' ref={phoneNumberRef} placeholder='Phone number' />
                 </div>
                 <div className = 'formSection'>
-                    <label htmlFor='email'>Email</label>
-                    <input type='email' required id='email' ref={emailRef} />
+                    <input type='email' required id='email' ref={emailRef} placeholder='Email' />
                 </div>
                 <div className = 'formSection'>
                     <button className = 'submitButton'>Submit</button>
