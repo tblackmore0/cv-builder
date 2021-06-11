@@ -36,29 +36,39 @@ function Form () {
 
     return (
         <div className = 'form'>
-            <h2>Personal Information</h2>
             <form onSubmit={submitHandler}>
+
                 <div className = 'formSection'>
-                    <input type='text' required id='title' ref={titleRef} placeholder='Title' />
-                </div>
-                <div className = 'formSection'>
+
+                    <h2>Personal Information</h2>
+            
                     <input type='text' required id='firstName' ref={firstNameRef} placeholder='First name' />
-                </div>
-                <div className = 'formSection'>
                     <input type='text' required id='lastName' ref={lastNameRef} placeholder='Last name' />
-                </div>
-                <div className = 'formSection'>
                     <input type='text' required id='address' ref={addressRef} placeholder='Address' />
-                </div>
-                <div className = 'formSection'>
                     <input type='number' required id='phoneNumber' ref={phoneNumberRef} placeholder='Phone number' />
-                </div>
-                <div className = 'formSection'>
                     <input type='email' required id='email' ref={emailRef} placeholder='Email' />
+
                 </div>
+
+                <div className = 'formSection'>
+                    <h2>Education</h2>
+                </div>
+
+                <div className = 'formSection'>
+                    <h2>Experience</h2>
+                    {/*
+                    <input type='text' id='position' ref={positionRef} placeholder='Position' />
+                    <input type='text' id='company' ref={companyRef} placeholder='Company' />
+                    <input type='text' id='location' ref={locationRef} placeholder='Location' />
+                    <input type='date' id='startDate' ref={startDateRef} placeholder='Starting date' />
+                    <input type='date' id='leaveDate' ref={leaveDateRef} placeholder='Leaving' />
+                    */}
+                </div>
+
                 <div className = 'formSection'>
                     <button className = 'submitButton'>Submit</button>
                 </div>
+
             </form>
         </div>
     )
